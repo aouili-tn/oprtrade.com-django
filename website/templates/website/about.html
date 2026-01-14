@@ -1,0 +1,94 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}About Us - TRADE OPERATIONS{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>About TRADE OPERATIONS</h1>
+        <p class="breadcrumb">Home / About Us</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-intro">
+            <h2>Your Global Trade Partner</h2>
+            <p class="lead">
+                TRADE OPERATIONS, operated by LAMFIX LTD, is a leading provider of international import and export services. 
+                With years of experience in global trade, we have built a reputation for reliability, efficiency, and professionalism.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-section">
+                <h3>Our Mission</h3>
+                <p>
+                    To facilitate seamless international trade by providing comprehensive import and export services that connect 
+                    businesses worldwide. We are committed to delivering excellence in every shipment, ensuring our clients' success 
+                    in the global marketplace.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Vision</h3>
+                <p>
+                    To be the most trusted and reliable trade operations partner globally, recognized for our commitment to quality, 
+                    innovation, and customer satisfaction. We aim to simplify international trade for businesses of all sizes.
+                </p>
+            </div>
+        </div>
+
+        <div class="values-section">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h4>Reliability</h4>
+                    <p>We deliver on our promises, every time. Your cargo is our priority.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Professionalism</h4>
+                    <p>Expert handling and meticulous attention to detail in every transaction.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Transparency</h4>
+                    <p>Clear communication and honest dealings build lasting partnerships.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Excellence</h4>
+                    <p>We continuously strive to exceed expectations and industry standards.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="expertise-section">
+            <h2>Our Expertise</h2>
+            <div class="expertise-content">
+                <div class="expertise-item">
+                    <h4>Import Services</h4>
+                    <p>Complete import solutions including customs clearance, documentation, and delivery coordination for all types of merchandise.</p>
+                </div>
+                <div class="expertise-item">
+                    <h4>Export Services</h4>
+                    <p>Comprehensive export management from packaging and labeling to shipping and compliance with international regulations.</p>
+                </div>
+                <div class="expertise-item">
+                    <h4>Global Logistics</h4>
+                    <p>End-to-end logistics management with real-time tracking and efficient supply chain solutions.</p>
+                </div>
+                <div class="expertise-item">
+                    <h4>Trade Consulting</h4>
+                    <p>Expert advice on international trade regulations, market entry strategies, and compliance requirements.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-cta">
+            <h2>Partner With Us</h2>
+            <p>Discover how TRADE OPERATIONS can help your business succeed in the global market.</p>
+            <a href="{% url 'website:contact' %}" class="btn btn-primary">Get Started Today</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

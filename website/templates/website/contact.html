@@ -1,0 +1,129 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Contact Us - TRADE OPERATIONS{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="breadcrumb">Home / Contact Us</p>
+    </div>
+</section>
+
+<section class="contact-content">
+    <div class="container">
+        <div class="contact-intro">
+            <h2>Get In Touch</h2>
+            <p class="lead">
+                We're here to help you with all your import and export needs. Contact us today to discuss how 
+                TRADE OPERATIONS can support your global business goals.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-form-section">
+                <h3>Send Us a Message</h3>
+                <form class="contact-form" method="post" action="">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your company name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="How can we help you?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your import/export needs..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h3>Contact Information</h3>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>Office Address</h4>
+                        <p>LAMFIX LTD<br>
+                        International Trade Center<br>
+                        Global Business District</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@tradeoperations.com">info@tradeoperations.com</a><br>
+                        <a href="mailto:support@tradeoperations.com">support@tradeoperations.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>Main: +1 (555) 123-4567<br>
+                        Support: +1 (555) 765-4321</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon">🕐</div>
+                    <div class="contact-details">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 2:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-cta">
+            <h3>Why Contact Us?</h3>
+            <div class="reasons-grid">
+                <div class="reason-item">
+                    <strong>Free Consultation</strong>
+                    <p>Get expert advice on your import/export needs at no cost</p>
+                </div>
+                <div class="reason-item">
+                    <strong>Quick Response</strong>
+                    <p>We typically respond within 24 hours on business days</p>
+                </div>
+                <div class="reason-item">
+                    <strong>Customized Solutions</strong>
+                    <p>Tailored services to meet your specific trade requirements</p>
+                </div>
+                <div class="reason-item">
+                    <strong>24/7 Support</strong>
+                    <p>Emergency support available for urgent shipment needs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

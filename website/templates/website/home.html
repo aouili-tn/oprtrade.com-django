@@ -1,0 +1,68 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Home - TRADE OPERATIONS{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1 class="hero-title">TRADE OPERATIONS</h1>
+        <p class="hero-subtitle">Global Import & Export Excellence</p>
+        <p class="hero-description">
+            Your trusted partner in international trade. We specialize in the import and export of all types of merchandise, 
+            providing reliable, efficient, and professional services worldwide.
+        </p>
+        <div class="hero-buttons">
+            <a href="{% url 'website:about' %}" class="btn btn-primary">Learn More</a>
+            <a href="{% url 'website:contact' %}" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose TRADE OPERATIONS?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Global Reach</h3>
+                <p>We operate worldwide, connecting you to markets across all continents with seamless logistics.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Trusted Partner</h3>
+                <p>Built on reliability and professionalism, we ensure your cargo arrives safely and on time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📦</div>
+                <h3>All Merchandise</h3>
+                <p>From raw materials to finished goods, we handle all types of products with expert care.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast & Efficient</h3>
+                <p>Streamlined processes and modern logistics ensure quick turnaround times for your shipments.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Compliant</h3>
+                <p>Full compliance with international trade regulations and secure handling of all documentation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3>Professional Service</h3>
+                <p>Dedicated account management and 24/7 support for all your import/export needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Expand Your Global Trade?</h2>
+        <p>Contact us today to discuss how we can help your business grow internationally.</p>
+        <a href="{% url 'website:contact' %}" class="btn btn-primary btn-large">Contact Us Now</a>
+    </div>
+</section>
+{% endblock %}
